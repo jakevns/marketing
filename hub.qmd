@@ -30,5 +30,5 @@ Personal link index. Not linked from the site. Bookmark this URL.
 
 - [LinkedIn](https://www.linkedin.com/in/jakevns/)
 - [GitHub](https://github.com/jakevns)
-- [Repo](https://github.com/jakevns/jakevns.github.io)
-- [Pages settings](https://github.com/jakevns/jakevns.github.io/settings/pages)
+- [Repo](https://github.com/jakevns/marketing)
+- [Pages settings](https://github.com/jakevns/marketing/settings/pages)
