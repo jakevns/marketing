@@ -1,0 +1,80 @@
+---
+title: "Jake Evans"
+subtitle: "Digital Marketing | CRM & Analytics | SEO & Content Strategy | MS Digital Marketing, Cal Poly Pomona"
+description: "Jake Evans — digital marketer working in CRM, analytics, SEO, and content strategy."
+---
+
+::: {.cta-row}
+[Email me](mailto:jakevns@gmail.com){.btn-cta .btn-cta-primary} [LinkedIn](https://www.linkedin.com/in/jakevns/){.btn-cta .btn-cta-secondary}
+:::
+
+<!-- Resume button goes in the cta-row once the Master PDF is exported:
+<a class="btn-resume" href="assets/resumes/JakeEvans-Resume-Master.pdf"
+   download="JakeEvans-Resume-Master.pdf">Download resume (PDF)</a>
+-->
+
+## About
+
+[NEED: positioning paragraph — written from 07-master-resume-draft.md once final]
+
+## Selected work
+
+::::: {.card-grid}
+
+:::: {.proof-card}
+[NEED: category]{.card-label}
+
+### [NEED: project name]
+
+**Problem.** [NEED]
+
+**What I did.** [NEED]
+
+::: {.card-result}
+**Result.** [NEED]
+
+[NEED: tool]{.tag} [NEED: tool]{.tag}
+:::
+::::
+
+:::: {.proof-card}
+[NEED: category]{.card-label}
+
+### [NEED: project name]
+
+**Problem.** [NEED]
+
+**What I did.** [NEED]
+
+::: {.card-result}
+**Result.** [NEED]
+
+[NEED: tool]{.tag} [NEED: tool]{.tag}
+:::
+::::
+
+:::::
+
+## Certifications
+
+:::: {.cert-grid}
+
+::: {.cert-card}
+[Google]{.cert-issuer}
+**Google Analytics 4 Certification**
+[Issued Oct 2025]{.cert-date}
+:::
+
+::: {.cert-card}
+[NEED: issuer]{.cert-issuer}
+**[NEED: Tableau certification name]**
+[NEED: date]{.cert-date}
+:::
+
+::::
+
+## Contact
+
+::: {.contact-cta}
+[jakevns@gmail.com](mailto:jakevns@gmail.com)
+:::

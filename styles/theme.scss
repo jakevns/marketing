@@ -1,0 +1,298 @@
+/*-- scss:defaults --*/
+
+// =====================================================================
+// DESIGN TOKENS — every visual decision for the site lives in this block.
+// Change a value here; never restyle an individual page.
+// Exception: content width (760px) is set by `grid: body-width` in
+// _quarto.yml, because Quarto reads its page grid from YAML.
+// =====================================================================
+
+// ---- Color ----------------------------------------------------------
+$brand-primary:      #1E3A5F;   // navy — headings, navbar, primary buttons
+$brand-accent:       #0F766E;   // teal — links, labels, highlights
+$brand-accent-hover: #0B5B55;
+$brand-ink:          #1A1D21;   // body text
+$brand-muted:        #5B6470;   // secondary text (AA on white and surface)
+$brand-surface:      #F6F7F9;   // cards, footer
+$brand-border:       #E3E6EB;
+$brand-bg:           #FFFFFF;
+
+// ---- Type -----------------------------------------------------------
+$web-font-path: "https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500;600&display=swap";
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$headings-font-family: "Inter Tight", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$headings-font-weight: 700;
+$headings-color: $brand-primary;
+$font-size-base: 1.0625rem;     // 17px
+$line-height-base: 1.65;
+
+// ---- Shape & spacing ------------------------------------------------
+$radius-sm: 6px;
+$radius-lg: 10px;
+$space-section: 3.5rem;
+
+// ---- Map tokens onto Bootstrap / Quarto variables -------------------
+$primary: $brand-primary;
+$secondary: $brand-muted;
+$body-color: $brand-ink;
+$body-bg: $brand-bg;
+$text-muted: $brand-muted;
+$link-color: $brand-accent;
+$link-hover-color: $brand-accent-hover;
+$border-color: $brand-border;
+$border-radius: $radius-sm;
+$border-radius-lg: $radius-lg;
+$navbar-bg: $brand-bg;
+$navbar-fg: $brand-primary;
+$navbar-hl: $brand-accent;
+$footer-bg: $brand-surface;
+$footer-fg: $brand-muted;
+
+
+/*-- scss:rules --*/
+
+// ---- Base -----------------------------------------------------------
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+}
+
+main.content h2 {
+  font-size: 1.5rem;
+  margin-top: $space-section;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid $brand-border;
+}
+
+main.content h3 {
+  font-size: 1.15rem;
+  margin-top: 0;
+}
+
+a {
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+a:hover { text-decoration-thickness: 2px; }
+
+:focus-visible {
+  outline: 2px solid $brand-accent;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+// ---- Navbar & footer ------------------------------------------------
+.navbar { border-bottom: 1px solid $brand-border; }
+
+.navbar-brand .navbar-title {
+  font-family: $headings-font-family;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.nav-footer {
+  border-top: 1px solid $brand-border;
+  font-size: 0.9rem;
+}
+
+// ---- Page hero (Quarto title block) ---------------------------------
+#title-block-header {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#title-block-header .title {
+  font-size: clamp(2.1rem, 6vw, 3rem);
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  margin-bottom: 0;
+}
+
+#title-block-header .subtitle {
+  font-family: $font-family-sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: $brand-muted;
+  margin-top: 0.75rem;
+}
+
+// ---- Buttons (hero CTAs + resume download) --------------------------
+.cta-row > p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0 0 1rem;
+}
+
+.btn-cta,
+.btn-resume {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;                 // touch target
+  padding: 0.6rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1.5px solid $brand-primary;
+  border-radius: $radius-sm;
+  text-decoration: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-cta-primary,
+.btn-resume {
+  background: $brand-primary;
+  color: #FFFFFF;
+}
+
+.btn-cta-primary:hover,
+.btn-resume:hover {
+  background: $brand-accent;
+  border-color: $brand-accent;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.btn-cta-secondary {
+  background: transparent;
+  color: $brand-primary;
+}
+
+.btn-cta-secondary:hover {
+  background: $brand-surface;
+  color: $brand-primary;
+  text-decoration: none;
+}
+
+// ---- Proof-project cards --------------------------------------------
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.proof-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1.25rem 1rem;
+  background: $brand-surface;
+  border: 1px solid $brand-border;
+  border-radius: $radius-lg;
+
+  p {
+    font-size: 0.97rem;
+    margin-bottom: 0.6rem;
+  }
+}
+
+.card-label {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $brand-accent;
+}
+
+.card-result {
+  margin-top: auto;                 // pins the result line to the card bottom
+  padding-top: 0.6rem;
+  border-top: 1px solid $brand-border;
+
+  strong { color: $brand-accent; }
+}
+
+.tag {
+  display: inline-block;
+  margin: 0 0.3rem 0.35rem 0;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1;
+  color: $brand-muted;
+  background: $brand-bg;
+  border: 1px solid $brand-border;
+  border-radius: 999px;
+}
+
+// ---- Certification cards --------------------------------------------
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.cert-card {
+  padding: 0.9rem 1rem;
+  background: $brand-bg;
+  border: 1px solid $brand-border;
+  border-left: 3px solid $brand-accent;
+  border-radius: $radius-sm;
+
+  p {
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  strong {
+    display: block;
+    margin: 0.25rem 0;
+    font-family: $headings-font-family;
+    font-weight: 600;
+    color: $brand-primary;
+  }
+}
+
+.cert-issuer,
+.cert-date {
+  display: block;
+  font-size: 0.82rem;
+  color: $brand-muted;
+}
+
+// ---- Contact CTA ----------------------------------------------------
+.contact-cta {
+  margin: 1rem 0 2rem;
+  padding: 1.5rem;
+  text-align: center;
+  background: $brand-surface;
+  border-radius: $radius-lg;
+
+  p { margin: 0; }
+
+  a {
+    font-family: $headings-font-family;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+}
+
+// ---- Responsive, motion, print --------------------------------------
+@media (max-width: 575.98px) {
+  .cta-row > p { flex-direction: column; }
+  .btn-cta,
+  .btn-resume { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  .navbar,
+  .nav-footer,
+  .cta-row { display: none; }
+}

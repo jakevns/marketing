@@ -1,0 +1,34 @@
+---
+title: "Hub"
+description: "Private link index."
+include-in-header:
+  text: '<meta name="robots" content="noindex, nofollow">'
+---
+
+Personal link index. Not linked from the site. Bookmark this URL.
+
+## Role pages
+
+| Page | Path | Status |
+|---|---|---|
+| Brand / Content | `/roles/brand-marketing.html` | Not built |
+| Social Media | `/roles/social-media.html` | Not built |
+| Marketing Coordinator | `/roles/marketing-coordinator.html` | Not built |
+| Marketing Analytics | `/roles/marketing-analytics.html` | Gated — R + Tableau findings needed |
+
+## Resumes
+
+| Variant | Path | Status |
+|---|---|---|
+| Master | `/assets/resumes/JakeEvans-Resume-Master.pdf` | Not exported |
+| Brand / Content | `/assets/resumes/JakeEvans-Resume-BrandContent.pdf` | Not exported |
+| Social Media | `/assets/resumes/JakeEvans-Resume-SocialMedia.pdf` | Not exported |
+| Coordinator | `/assets/resumes/JakeEvans-Resume-Coordinator.pdf` | Not exported |
+| Analytics | `/assets/resumes/JakeEvans-Resume-Analytics.pdf` | Not exported |
+
+## Profiles & admin
+
+- [LinkedIn](https://www.linkedin.com/in/jakevns/)
+- [GitHub](https://github.com/jakevns)
+- [Repo](https://github.com/jakevns/jakevns.github.io)
+- [Pages settings](https://github.com/jakevns/jakevns.github.io/settings/pages)

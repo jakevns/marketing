@@ -1,0 +1,46 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "**/*.qmd"          # .qmd only — a README.md will never become a page
+  resources:
+    - "assets/**"         # copies resume PDFs even when linked from raw HTML
+  post-render:
+    - scripts/ensure-nojekyll.R
+
+website:
+  title: "Jake Evans"
+  description: "Digital marketer — CRM, analytics, SEO, and content."
+  # favicon: assets/favicon.png   # uncomment once the file exists
+  search: false           # a search box would let recruiters find other role pages
+  navbar:
+    title: "Jake Evans"
+    right:
+      - text: Contact
+        href: mailto:jakevns@gmail.com
+      - icon: linkedin
+        href: https://www.linkedin.com/in/jakevns/
+        aria-label: LinkedIn
+      - icon: github
+        href: https://github.com/jakevns
+        aria-label: GitHub
+  page-footer:
+    center: "Jake Evans · [jakevns@gmail.com](mailto:jakevns@gmail.com)"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles/theme.scss
+    grid:
+      body-width: 760px   # only layout value Quarto reads from YAML, not SCSS
+    toc: false
+    anchor-sections: false
+    smooth-scroll: false
+    link-external-newwindow: true
+
+execute:
+  freeze: true
+
+engine: knitr
+lang: en

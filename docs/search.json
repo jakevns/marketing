@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jake Evans",
+    "section": "",
+    "text": "Email me LinkedIn"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Jake Evans",
+    "section": "About",
+    "text": "About\n[NEED: positioning paragraph — written from 07-master-resume-draft.md once final]"
+  },
+  {
+    "objectID": "index.html#selected-work",
+    "href": "index.html#selected-work",
+    "title": "Jake Evans",
+    "section": "Selected work",
+    "text": "Selected work\n\n\nNEED: category\n\n[NEED: project name]\nProblem. [NEED]\nWhat I did. [NEED]\n\nResult. [NEED]\nNEED: tool NEED: tool\n\n\n\n\nNEED: category\n\n[NEED: project name]\nProblem. [NEED]\nWhat I did. [NEED]\n\nResult. [NEED]\nNEED: tool NEED: tool"
+  },
+  {
+    "objectID": "index.html#certifications",
+    "href": "index.html#certifications",
+    "title": "Jake Evans",
+    "section": "Certifications",
+    "text": "Certifications\n\n\nGoogle Google Analytics 4 Certification Issued Oct 2025\n\n\nNEED: issuer [NEED: Tableau certification name] NEED: date"
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Jake Evans",
+    "section": "Contact",
+    "text": "Contact\n\njakevns@gmail.com"
+  },
+  {
+    "objectID": "hub.html",
+    "href": "hub.html",
+    "title": "Hub",
+    "section": "",
+    "text": "Personal link index. Not linked from the site. Bookmark this URL."
+  },
+  {
+    "objectID": "hub.html#role-pages",
+    "href": "hub.html#role-pages",
+    "title": "Hub",
+    "section": "Role pages",
+    "text": "Role pages\n\n\n\n\n\n\n\n\nPage\nPath\nStatus\n\n\n\n\nBrand / Content\n/roles/brand-marketing.html\nNot built\n\n\nSocial Media\n/roles/social-media.html\nNot built\n\n\nMarketing Coordinator\n/roles/marketing-coordinator.html\nNot built\n\n\nMarketing Analytics\n/roles/marketing-analytics.html\nGated — R + Tableau findings needed"
+  },
+  {
+    "objectID": "hub.html#resumes",
+    "href": "hub.html#resumes",
+    "title": "Hub",
+    "section": "Resumes",
+    "text": "Resumes\n\n\n\n\n\n\n\n\nVariant\nPath\nStatus\n\n\n\n\nMaster\n/assets/resumes/JakeEvans-Resume-Master.pdf\nNot exported\n\n\nBrand / Content\n/assets/resumes/JakeEvans-Resume-BrandContent.pdf\nNot exported\n\n\nSocial Media\n/assets/resumes/JakeEvans-Resume-SocialMedia.pdf\nNot exported\n\n\nCoordinator\n/assets/resumes/JakeEvans-Resume-Coordinator.pdf\nNot exported\n\n\nAnalytics\n/assets/resumes/JakeEvans-Resume-Analytics.pdf\nNot exported"
+  },
+  {
+    "objectID": "hub.html#profiles-admin",
+    "href": "hub.html#profiles-admin",
+    "title": "Hub",
+    "section": "Profiles & admin",
+    "text": "Profiles & admin\n\nLinkedIn\nGitHub\nRepo\nPages settings"
+  }
+]
