@@ -13,27 +13,19 @@ website:
   description: "Digital marketer — CRM, analytics, SEO, and content."
   # favicon: assets/favicon.png   # uncomment once the file exists
   search: false           # a search box would let recruiters find other role pages
-  navbar:
-    title: "Jake Evans"
-    right:
-      - text: Contact
-        href: mailto:jakevns@gmail.com
-      - icon: linkedin
-        href: https://www.linkedin.com/in/jakevns/
-        aria-label: LinkedIn
-      - icon: github
-        href: https://github.com/jakevns
-        aria-label: GitHub
-  page-footer:
-    center: "Jake Evans · [jakevns@gmail.com](mailto:jakevns@gmail.com)"
+  # No Quarto navbar or page-footer: the site shell (nav + footer) lives in
+  # _partials/ so every page, including role pages, shares one design.
 
 format:
   html:
     theme:
       - cosmo
       - styles/theme.scss
+    include-in-header: _partials/head.html
+    include-before-body: _partials/nav.html
+    include-after-body: _partials/footer.html
     grid:
-      body-width: 760px   # only layout value Quarto reads from YAML, not SCSS
+      body-width: 760px   # prose width on standard pages (e.g. hub)
     toc: false
     anchor-sections: false
     smooth-scroll: false

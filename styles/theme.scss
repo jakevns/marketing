@@ -3,296 +3,367 @@
 // =====================================================================
 // DESIGN TOKENS — every visual decision for the site lives in this block.
 // Change a value here; never restyle an individual page.
-// Exception: content width (760px) is set by `grid: body-width` in
-// _quarto.yml, because Quarto reads its page grid from YAML.
 // =====================================================================
 
 // ---- Color ----------------------------------------------------------
-$brand-primary:      #1E3A5F;   // navy — headings, navbar, primary buttons
-$brand-accent:       #0F766E;   // teal — links, labels, highlights
-$brand-accent-hover: #0B5B55;
-$brand-ink:          #1A1D21;   // body text
-$brand-muted:        #5B6470;   // secondary text (AA on white and surface)
-$brand-surface:      #F6F7F9;   // cards, footer
-$brand-border:       #E3E6EB;
-$brand-bg:           #FFFFFF;
+$c-bg:        #070B14;   // page background
+$c-card:      #0E1525;   // card surface
+$c-card-2:    #121B2E;   // card surface, lighter end of gradient
+$c-text:      #E9EEF5;   // primary text
+$c-muted:     #8C97AA;   // secondary text
+$c-dim:       #5E6A7E;   // tertiary text (marquee, indices)
+$c-accent:    #2DD4BF;   // teal
+$c-accent-2:  #60A5FA;   // blue — gradient end
+$c-need:      #F4B860;   // amber — visible [NEED:] placeholders
+$c-line:      rgba(255, 255, 255, .08);
+$c-line-2:    rgba(255, 255, 255, .14);
 
 // ---- Type -----------------------------------------------------------
-$web-font-path: "https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500;600&display=swap";
-$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$headings-font-family: "Inter Tight", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-$headings-font-weight: 700;
-$headings-color: $brand-primary;
-$font-size-base: 1.0625rem;     // 17px
-$line-height-base: 1.65;
+$web-font-path: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap";
+$f-sans:    "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$f-display: "Inter Tight", "Inter", system-ui, sans-serif;
+$f-serif:   "Instrument Serif", Georgia, serif;
+$f-mono:    "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
 
-// ---- Shape & spacing ------------------------------------------------
-$radius-sm: 6px;
-$radius-lg: 10px;
-$space-section: 3.5rem;
+// ---- Layout & motion ------------------------------------------------
+$wrap:      1180px;
+$nav-h:     72px;
+$radius:    18px;
+$ease:      cubic-bezier(.2, .7, .2, 1);
 
-// ---- Map tokens onto Bootstrap / Quarto variables -------------------
-$primary: $brand-primary;
-$secondary: $brand-muted;
-$body-color: $brand-ink;
-$body-bg: $brand-bg;
-$text-muted: $brand-muted;
-$link-color: $brand-accent;
-$link-hover-color: $brand-accent-hover;
-$border-color: $brand-border;
-$border-radius: $radius-sm;
-$border-radius-lg: $radius-lg;
-$navbar-bg: $brand-bg;
-$navbar-fg: $brand-primary;
-$navbar-hl: $brand-accent;
-$footer-bg: $brand-surface;
-$footer-fg: $brand-muted;
+// ---- Map tokens onto Bootstrap / Quarto -----------------------------
+$body-bg: $c-bg;
+$body-color: $c-text;
+$text-muted: $c-muted;
+$link-color: $c-accent;
+$link-hover-color: $c-text;
+$border-color: $c-line-2;
+$font-family-sans-serif: $f-sans;
+$font-family-monospace: $f-mono;
+$headings-font-family: $f-display;
+$headings-color: $c-text;
+$headings-font-weight: 600;
+$font-size-base: 1.0625rem;
+$line-height-base: 1.6;
+$code-color: $c-accent;
 
 
 /*-- scss:rules --*/
 
+:root {
+  --bg: #{$c-bg};
+  --card: #{$c-card};
+  --card-2: #{$c-card-2};
+  --text: #{$c-text};
+  --muted: #{$c-muted};
+  --dim: #{$c-dim};
+  --accent: #{$c-accent};
+  --accent-2: #{$c-accent-2};
+  --line: #{$c-line};
+  --line-2: #{$c-line-2};
+  --grad: linear-gradient(100deg, #{$c-accent} 0%, #{$c-accent-2} 100%);
+  --ease: #{$ease};
+  --gutter: clamp(16px, 4vw, 40px);
+}
+
 // ---- Base -----------------------------------------------------------
+html { scroll-behavior: smooth; }
 body {
+  background: var(--bg);
+  color: var(--text);
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
+// Zero out Bootstrap's element margins; component classes set their own.
+body :where(h1, h2, h3, h4, p) { margin: 0; }
+.page-layout-custom :where(h1, h2, h3) { border-bottom: 0; padding-bottom: 0; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+section[id], header[id] { scroll-margin-top: $nav-h + 8px; }
 
-h1, h2, h3, h4 {
-  letter-spacing: -0.015em;
-  line-height: 1.2;
-}
-
-main.content h2 {
-  font-size: 1.5rem;
-  margin-top: $space-section;
-  margin-bottom: 1.25rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid $brand-border;
-}
-
-main.content h3 {
-  font-size: 1.15rem;
-  margin-top: 0;
-}
-
-a {
-  text-underline-offset: 0.18em;
-  text-decoration-thickness: 1px;
-}
-a:hover { text-decoration-thickness: 2px; }
-
-:focus-visible {
-  outline: 2px solid $brand-accent;
-  outline-offset: 3px;
-  border-radius: 2px;
-}
-
-// ---- Navbar & footer ------------------------------------------------
-.navbar { border-bottom: 1px solid $brand-border; }
-
-.navbar-brand .navbar-title {
-  font-family: $headings-font-family;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
-
-.nav-footer {
-  border-top: 1px solid $brand-border;
-  font-size: 0.9rem;
-}
-
-// ---- Page hero (Quarto title block) ---------------------------------
-#title-block-header {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-#title-block-header .title {
-  font-size: clamp(2.1rem, 6vw, 3rem);
-  letter-spacing: -0.025em;
-  line-height: 1.05;
-  margin-bottom: 0;
-}
-
-#title-block-header .subtitle {
-  font-family: $font-family-sans-serif;
-  font-size: 1.1rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: $brand-muted;
-  margin-top: 0.75rem;
-}
-
-// ---- Buttons (hero CTAs + resume download) --------------------------
-.cta-row > p {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin: 0 0 1rem;
-}
-
-.btn-cta,
-.btn-resume {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 44px;                 // touch target
-  padding: 0.6rem 1.25rem;
-  font-size: 0.95rem;
-  font-weight: 600;
-  border: 1.5px solid $brand-primary;
-  border-radius: $radius-sm;
-  text-decoration: none;
-  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
-}
-
-.btn-cta-primary,
-.btn-resume {
-  background: $brand-primary;
-  color: #FFFFFF;
-}
-
-.btn-cta-primary:hover,
-.btn-resume:hover {
-  background: $brand-accent;
-  border-color: $brand-accent;
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-.btn-cta-secondary {
-  background: transparent;
-  color: $brand-primary;
-}
-
-.btn-cta-secondary:hover {
-  background: $brand-surface;
-  color: $brand-primary;
-  text-decoration: none;
-}
-
-// ---- Proof-project cards --------------------------------------------
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
-  gap: 1rem;
-  margin: 1.5rem 0;
-}
-
-.proof-card {
-  display: flex;
-  flex-direction: column;
-  padding: 1.25rem 1.25rem 1rem;
-  background: $brand-surface;
-  border: 1px solid $brand-border;
-  border-radius: $radius-lg;
-
-  p {
-    font-size: 0.97rem;
-    margin-bottom: 0.6rem;
-  }
-}
-
-.card-label {
-  display: inline-block;
-  margin-bottom: 0.4rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+.wrap { max-width: $wrap; margin: 0 auto; padding: 0 var(--gutter); }
+.mono {
+  font-family: $f-mono;
+  font-size: .78rem;
+  letter-spacing: .08em;
   text-transform: uppercase;
-  color: $brand-accent;
+  color: var(--muted);
+}
+.serif { font-family: $f-serif; font-style: italic; font-weight: 400; letter-spacing: -.01em; }
+.grad-text {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.need { color: $c-need; }
+
+// ---- Background atmosphere ------------------------------------------
+.bg-grid {
+  position: fixed; inset: 0; z-index: -2; pointer-events: none; opacity: .55;
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 30%, transparent 75%);
+}
+.bg-glow {
+  position: fixed; z-index: -1; pointer-events: none;
+  width: 900px; height: 900px; top: -300px; right: -250px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(45, 212, 191, .16), transparent 60%);
+  filter: blur(20px);
+  animation: drift 18s ease-in-out infinite alternate;
+}
+@keyframes drift { to { transform: translate(-120px, 80px) scale(1.08); } }
+
+// ---- Nav ------------------------------------------------------------
+.site-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1030;
+  border-bottom: 1px solid transparent;
+  transition: background .3s, border-color .3s;
+  .wrap { display: flex; align-items: center; justify-content: space-between; height: $nav-h; }
+  &.scrolled {
+    background: rgba(7, 11, 20, .72);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-color: var(--line);
+  }
+  a { color: inherit; text-decoration: none; }
+}
+.brand {
+  display: flex; align-items: center; gap: .6rem;
+  font-family: $f-display; font-weight: 700; font-size: 1.05rem; letter-spacing: -.01em;
+}
+.brand-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 2.4s infinite;
+}
+@keyframes pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(45, 212, 191, .55); }
+  70%  { box-shadow: 0 0 0 10px rgba(45, 212, 191, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(45, 212, 191, 0); }
+}
+.nav-links { display: flex; gap: 2rem; align-items: center; }
+.nav-links a { font-size: .92rem; color: var(--muted); transition: color .2s; }
+.nav-links a:hover { color: var(--text); }
+.nav-links .nav-cta {
+  padding: .5rem 1rem; border: 1px solid var(--line-2); border-radius: 999px;
+  color: var(--text); transition: border-color .2s, background .2s;
+  &:hover { border-color: var(--accent); background: rgba(45, 212, 191, .08); }
+}
+@media (max-width: 720px) { .nav-links a:not(.nav-cta) { display: none; } }
+
+// ---- Standard (prose) pages, e.g. the hub ---------------------------
+.page-layout-article { padding-top: $nav-h + 24px; }
+#quarto-content.page-layout-article { padding-top: $nav-h + 24px; }
+// Footer spans the full width on standard pages too
+#quarto-content > .site-footer { grid-column: screen-start / screen-end; }
+.page-layout-article main.content {
+  h2 { margin: 2.5rem 0 1rem; font-size: 1.5rem; }
+  p, ul, table { margin-bottom: 1rem; }
+  table { color: var(--text); }
+  code { color: var(--accent); background: transparent; }
+}
+#title-block-header .title { font-size: clamp(2.2rem, 6vw, 3.2rem); letter-spacing: -.03em; }
+#title-block-header .description { display: none; }
+
+// ---- Custom-layout pages: strip Quarto's default spacing ------------
+.page-layout-custom { padding: 0; }
+.page-layout-custom main.content { margin: 0; padding: 0; }
+
+// ---- Hero -----------------------------------------------------------
+#quarto-content .hero { min-height: 100svh; display: flex; align-items: center; padding: 120px 0 64px; }
+.hero > .wrap { width: 100%; }
+.hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 3rem; align-items: center; }
+.eyebrow { display: inline-flex; align-items: center; gap: .6rem; margin-bottom: 1.75rem; }
+.eyebrow::before { content: ""; width: 28px; height: 1px; background: var(--accent); }
+h1.name {
+  font-family: $f-display; font-weight: 700; color: var(--text);
+  font-size: clamp(3.6rem, 10.5vw, 8.4rem); line-height: .9; letter-spacing: -.045em;
+  .serif { display: block; font-size: 1.08em; line-height: .95; padding-bottom: .06em; }
+}
+.lede {
+  margin-top: 2rem; max-width: 34rem; color: var(--muted); line-height: 1.55;
+  font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+  strong { color: var(--text); font-weight: 500; }
+}
+.btns { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2.25rem; }
+.btn-pill {
+  display: inline-flex; align-items: center; gap: .6rem;
+  min-height: 48px; padding: .8rem 1.4rem; border-radius: 999px;
+  font-weight: 600; font-size: .95rem; text-decoration: none;
+  transition: transform .25s var(--ease), box-shadow .25s, background .25s, border-color .25s;
+  svg { width: 16px; height: 16px; transition: transform .25s var(--ease); }
+  &:hover svg { transform: translateX(3px); }
+}
+.btn-solid { background: var(--text); color: var(--bg); }
+.btn-solid:hover {
+  color: var(--bg); transform: translateY(-2px);
+  box-shadow: 0 10px 30px -10px rgba(45, 212, 191, .55);
+}
+.btn-outline { border: 1px solid var(--line-2); color: var(--text); }
+.btn-outline:hover { color: var(--text); border-color: var(--accent); background: rgba(45, 212, 191, .06); }
+
+.funnel-wrap { position: relative; width: 100%; aspect-ratio: 1 / 1; max-height: 560px; }
+.funnel-wrap canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+// ---- Stats ----------------------------------------------------------
+.stats {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.stat { padding: 1.9rem 1.5rem; border-left: 1px solid var(--line); }
+.stat:first-child { border-left: 0; padding-left: 0; }
+.stat-num {
+  font-family: $f-display; font-weight: 600; line-height: 1; letter-spacing: -.03em;
+  font-size: clamp(2rem, 3.8vw, 2.9rem);
+}
+.stat-label { margin-top: .6rem; font-size: .88rem; color: var(--muted); line-height: 1.4; }
+@media (max-width: 860px) {
+  .stats { grid-template-columns: 1fr 1fr; }
+  .stat:nth-child(3) { border-left: 0; padding-left: 0; }
+  .stat:nth-child(n + 3) { border-top: 1px solid var(--line); }
 }
 
-.card-result {
-  margin-top: auto;                 // pins the result line to the card bottom
-  padding-top: 0.6rem;
-  border-top: 1px solid $brand-border;
-
-  strong { color: $brand-accent; }
+// ---- Tool marquee ---------------------------------------------------
+.marquee {
+  overflow: hidden; padding: 1.6rem 0;
+  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
 }
+.marquee-track { display: flex; gap: 3.5rem; width: max-content; animation: marquee 38s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-item {
+  display: flex; align-items: center; gap: 3.5rem; white-space: nowrap;
+  font-family: $f-display; font-weight: 500; font-size: 1.3rem; color: var(--dim);
+}
+.marquee-item::after { content: "\2726"; font-size: .7rem; color: var(--accent); opacity: .7; }
+@keyframes marquee { to { transform: translateX(-50%); } }
 
+// ---- Sections -------------------------------------------------------
+// #quarto-content prefix beats Quarto's own `#quarto-content > * { padding-top }`
+#quarto-content section.block { padding: clamp(5rem, 11vw, 9rem) 0 0; }
+.sec-head {
+  display: grid; grid-template-columns: 200px 1fr; gap: 2rem;
+  margin-bottom: 3rem; align-items: end;
+  h2 {
+    font-family: $f-display; font-weight: 600; color: var(--text);
+    font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1; letter-spacing: -.035em;
+  }
+}
+@media (max-width: 760px) { .sec-head { grid-template-columns: 1fr; gap: .75rem; } }
+
+// ---- Work cards -----------------------------------------------------
+.work { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+@media (max-width: 760px) { .work { grid-template-columns: 1fr; } }
+.work-card {
+  position: relative; isolation: isolate; overflow: hidden;
+  padding: 2rem; border-radius: $radius;
+  background: var(--card); border: 1px solid var(--line); color: var(--text);
+  transition: transform .4s var(--ease), border-color .4s;
+  &::before {
+    content: ""; position: absolute; inset: 0; z-index: -1; opacity: 0; transition: opacity .4s;
+    background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(45, 212, 191, .13), transparent 45%);
+  }
+  &:hover { transform: translateY(-4px); border-color: var(--line-2); }
+  &:hover::before { opacity: 1; }
+  h3 {
+    font-family: $f-display; font-weight: 600; color: var(--text);
+    font-size: 1.55rem; letter-spacing: -.02em; line-height: 1.15;
+    .serif { color: var(--accent); }
+  }
+  p { color: var(--muted); margin-top: .9rem; font-size: .97rem; }
+}
+.work-card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2.5rem; }
+.work-card-idx { font-family: $f-mono; font-size: .78rem; color: var(--dim); }
+.result {
+  display: flex; gap: .75rem; align-items: baseline;
+  margin-top: 1.5rem; padding-top: 1.1rem; border-top: 1px dashed var(--line-2); font-size: .95rem;
+  .mono { color: var(--accent); flex-shrink: 0; }
+}
+.tags { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: 1.25rem; }
 .tag {
-  display: inline-block;
-  margin: 0 0.3rem 0.35rem 0;
-  padding: 0.35rem 0.6rem;
-  font-size: 0.78rem;
-  font-weight: 500;
-  line-height: 1;
-  color: $brand-muted;
-  background: $brand-bg;
-  border: 1px solid $brand-border;
-  border-radius: 999px;
+  font-family: $f-mono; font-size: .72rem; padding: .35rem .65rem;
+  border-radius: 999px; border: 1px solid var(--line-2); color: var(--muted);
 }
 
-// ---- Certification cards --------------------------------------------
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
-  gap: 0.75rem;
-  margin: 1.5rem 0;
+// ---- Pillars --------------------------------------------------------
+.pillars { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }
+.pillar { padding: 2.25rem 2rem 2.25rem 0; border-right: 1px solid var(--line); }
+.pillar:last-child { border-right: 0; }
+.pillar + .pillar { padding-left: 2rem; }
+.pillar h3 {
+  font-family: $f-display; font-weight: 600; color: var(--text);
+  font-size: 1.4rem; letter-spacing: -.02em; margin: 1rem 0 .75rem;
+}
+.pillar p { color: var(--muted); font-size: .95rem; }
+.bar { position: relative; height: 2px; margin-top: 1.75rem; overflow: hidden; background: var(--line); }
+.bar i { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--grad); transition: width 1.4s var(--ease); }
+.in .bar i { width: 100%; }
+@media (max-width: 860px) {
+  .pillars { grid-template-columns: 1fr; }
+  .pillar, .pillar + .pillar { border-right: 0; border-bottom: 1px solid var(--line); padding-left: 0; }
 }
 
-.cert-card {
-  padding: 0.9rem 1rem;
-  background: $brand-bg;
-  border: 1px solid $brand-border;
-  border-left: 3px solid $brand-accent;
-  border-radius: $radius-sm;
-
-  p {
-    margin: 0;
-    line-height: 1.4;
-  }
-
-  strong {
-    display: block;
-    margin: 0.25rem 0;
-    font-family: $headings-font-family;
-    font-weight: 600;
-    color: $brand-primary;
-  }
+// ---- Credentials ----------------------------------------------------
+.creds { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); gap: 1rem; }
+.cred {
+  padding: 1.5rem; border-radius: 14px; border: 1px solid var(--line);
+  background: linear-gradient(180deg, var(--card-2), var(--card));
+  transition: border-color .3s, transform .3s var(--ease);
+  &:hover { border-color: var(--line-2); transform: translateY(-3px); }
+  h3 { font-family: $f-display; font-weight: 600; color: var(--text); font-size: 1.15rem; margin-top: 1.1rem; line-height: 1.25; }
+  h3.need { color: $c-need; }
+  p { color: var(--muted); font-size: .88rem; margin-top: .4rem; }
+}
+.cred-badge {
+  display: inline-flex; align-items: center; gap: .4rem;
+  font-family: $f-mono; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--accent); padding: .3rem .6rem; border-radius: 999px;
+  background: rgba(45, 212, 191, .08); border: 1px solid rgba(45, 212, 191, .2);
 }
 
-.cert-issuer,
-.cert-date {
-  display: block;
-  font-size: 0.82rem;
-  color: $brand-muted;
+// ---- Contact --------------------------------------------------------
+#quarto-content .contact { padding: clamp(6rem, 14vw, 11rem) 0 4rem; text-align: center; }
+.contact h2 {
+  margin-top: 1.5rem; font-family: $f-display; font-weight: 600; color: var(--text);
+  font-size: clamp(3rem, 9vw, 7rem); line-height: .95; letter-spacing: -.045em;
 }
-
-// ---- Contact CTA ----------------------------------------------------
-.contact-cta {
-  margin: 1rem 0 2rem;
-  padding: 1.5rem;
-  text-align: center;
-  background: $brand-surface;
-  border-radius: $radius-lg;
-
-  p { margin: 0; }
-
-  a {
-    font-family: $headings-font-family;
-    font-size: 1.25rem;
-    font-weight: 600;
-  }
+.contact .mail {
+  display: inline-flex; align-items: center; gap: .75rem; margin-top: 2.5rem;
+  font-size: clamp(1.1rem, 2.6vw, 1.6rem); font-weight: 500; color: var(--text); text-decoration: none;
+  border-bottom: 1px solid var(--line-2); padding-bottom: .4rem;
+  transition: border-color .3s, color .3s;
+  svg { width: 22px; height: 22px; transition: transform .3s var(--ease); }
+  &:hover { border-color: var(--accent); color: var(--accent); }
+  &:hover svg { transform: translate(3px, -3px); }
 }
+.socials { display: flex; justify-content: center; gap: 1.5rem; margin-top: 2rem; }
+.socials a { color: var(--muted); font-size: .92rem; text-decoration: none; transition: color .2s; }
+.socials a:hover { color: var(--text); }
+
+// ---- Footer ---------------------------------------------------------
+.site-footer { border-top: 1px solid var(--line); padding: 1.75rem 0; margin-top: 3rem; }
+.site-footer .wrap { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+
+// ---- Scroll reveal (only hides content when JS is running) ----------
+.js .reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
+.js .reveal.in { opacity: 1; transform: none; }
+.d1 { transition-delay: .08s; }
+.d2 { transition-delay: .16s; }
+.d3 { transition-delay: .24s; }
 
 // ---- Responsive, motion, print --------------------------------------
-@media (max-width: 575.98px) {
-  .cta-row > p { flex-direction: column; }
-  .btn-cta,
-  .btn-resume { width: 100%; }
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .funnel-wrap { aspect-ratio: 16 / 10; max-height: 340px; }
 }
-
 @media (prefers-reduced-motion: reduce) {
-  * {
-    transition: none !important;
-    scroll-behavior: auto !important;
-  }
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .js .reveal { opacity: 1; transform: none; }
 }
-
 @media print {
-  .navbar,
-  .nav-footer,
-  .cta-row { display: none; }
+  .site-nav, .bg-grid, .bg-glow, .funnel-wrap, .marquee { display: none; }
+  .js .reveal { opacity: 1; transform: none; }
 }

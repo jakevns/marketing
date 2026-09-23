@@ -1,40 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jake Evans",
-    "section": "",
-    "text": "Email me LinkedIn"
-  },
-  {
-    "objectID": "index.html#about",
-    "href": "index.html#about",
-    "title": "Jake Evans",
-    "section": "About",
-    "text": "About\n[NEED: positioning paragraph — written from 07-master-resume-draft.md once final]"
-  },
-  {
-    "objectID": "index.html#selected-work",
-    "href": "index.html#selected-work",
-    "title": "Jake Evans",
-    "section": "Selected work",
-    "text": "Selected work\n\n\nNEED: category\n\n[NEED: project name]\nProblem. [NEED]\nWhat I did. [NEED]\n\nResult. [NEED]\nNEED: tool NEED: tool\n\n\n\n\nNEED: category\n\n[NEED: project name]\nProblem. [NEED]\nWhat I did. [NEED]\n\nResult. [NEED]\nNEED: tool NEED: tool"
-  },
-  {
-    "objectID": "index.html#certifications",
-    "href": "index.html#certifications",
-    "title": "Jake Evans",
-    "section": "Certifications",
-    "text": "Certifications\n\n\nGoogle Google Analytics 4 Certification Issued Oct 2025\n\n\nNEED: issuer [NEED: Tableau certification name] NEED: date"
-  },
-  {
-    "objectID": "index.html#contact",
-    "href": "index.html#contact",
-    "title": "Jake Evans",
-    "section": "Contact",
-    "text": "Contact\n\njakevns@gmail.com"
-  },
-  {
     "objectID": "hub.html",
     "href": "hub.html",
     "title": "Hub",

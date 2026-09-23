@@ -1,80 +1,124 @@
 ---
-title: "Jake Evans"
-subtitle: "Digital Marketing | CRM & Analytics | SEO & Content Strategy | MS Digital Marketing, Cal Poly Pomona"
+pagetitle: "Digital Marketing Portfolio"
 description: "Jake Evans — digital marketer working in CRM, analytics, SEO, and content strategy."
+page-layout: custom
 ---
 
-::: {.cta-row}
-[Email me](mailto:jakevns@gmail.com){.btn-cta .btn-cta-primary} [LinkedIn](https://www.linkedin.com/in/jakevns/){.btn-cta .btn-cta-secondary}
-:::
+```{=html}
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow mono reveal">Digital Marketing — Brea, CA</div>
+        <h1 class="name reveal d1">Jake<span class="serif grad-text">Evans</span></h1>
+        <p class="lede reveal d2">A <strong>data-and-CRM backbone</strong> with a <strong>creative execution edge</strong>. I run Salesforce pipelines and leadership dashboards, build SEO and content strategy, and ship the creative myself.</p>
+        <div class="btns reveal d3">
+          <a class="btn-pill btn-solid" href="#work">See the work
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+          <a class="btn-pill btn-outline" href="mailto:jakevns@gmail.com">Email me</a>
+        </div>
+      </div>
+      <div class="funnel-wrap reveal d2" aria-hidden="true">
+        <canvas id="funnel"></canvas>
+      </div>
+    </div>
+  </div>
+</header>
 
-<!-- Resume button goes in the cta-row once the Master PDF is exported:
-<a class="btn-resume" href="assets/resumes/JakeEvans-Resume-Master.pdf"
-   download="JakeEvans-Resume-Master.pdf">Download resume (PDF)</a>
--->
+<div class="wrap">
+  <div class="stats reveal">
+    <div class="stat"><div class="stat-num" data-count="6" data-suffix=" yrs">6 yrs</div><div class="stat-label">Running Salesforce lead capture &amp; pipeline</div></div>
+    <div class="stat"><div class="stat-num" data-count="100" data-prefix="$" data-suffix="K+">$100K+</div><div class="stat-label">Open opportunity pipeline managed</div></div>
+    <div class="stat"><div class="stat-num" data-count="3.94" data-decimals="2">3.94</div><div class="stat-label">GPA — MS Digital Marketing, Cal Poly Pomona</div></div>
+    <div class="stat"><div class="stat-num grad-text">GA4</div><div class="stat-label">Google Analytics certified</div></div>
+  </div>
+</div>
 
-## About
+<div class="marquee" aria-label="Tools: Salesforce, Looker, Google Analytics 4, Tableau, R, Shopify, Excel and Sheets, Quarto, HTML and CSS, Adobe Creative Cloud">
+  <div class="marquee-track" aria-hidden="true">
+    <span class="marquee-item">Salesforce</span><span class="marquee-item">Looker</span><span class="marquee-item">Google Analytics 4</span><span class="marquee-item">Tableau</span><span class="marquee-item">R</span><span class="marquee-item">Shopify</span><span class="marquee-item">Excel &amp; Sheets</span><span class="marquee-item">Quarto</span><span class="marquee-item">HTML / CSS</span><span class="marquee-item">Adobe CC</span>
+    <span class="marquee-item">Salesforce</span><span class="marquee-item">Looker</span><span class="marquee-item">Google Analytics 4</span><span class="marquee-item">Tableau</span><span class="marquee-item">R</span><span class="marquee-item">Shopify</span><span class="marquee-item">Excel &amp; Sheets</span><span class="marquee-item">Quarto</span><span class="marquee-item">HTML / CSS</span><span class="marquee-item">Adobe CC</span>
+  </div>
+</div>
 
-[NEED: positioning paragraph — written from 07-master-resume-draft.md once final]
+<section class="block" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono reveal">01 — Selected work</div>
+      <div><h2 class="reveal d1">Work with a <span class="serif grad-text">result line.</span></h2></div>
+    </div>
+    <div class="work">
+      <article class="work-card reveal">
+        <div class="work-card-top"><span class="mono">CRM &amp; Analytics</span><span class="work-card-idx">/01</span></div>
+        <h3>Casper — pipeline &amp; <span class="serif">leadership dashboards</span></h3>
+        <p>Salesforce lead capture through close, plus Looker and Salesforce dashboards read by the district manager and company president.</p>
+        <div class="result"><span class="mono">Result</span><span class="need">[NEED: close rate / what the dashboards changed]</span></div>
+        <div class="tags"><span class="tag">Salesforce</span><span class="tag">Looker</span><span class="tag">Email</span></div>
+      </article>
+      <article class="work-card reveal d1">
+        <div class="work-card-top"><span class="mono">Strategy</span><span class="work-card-idx">/02</span></div>
+        <h3>Wellness Ranch — <span class="serif">digital marketing plan</span></h3>
+        <p>Competitive analysis, SWOT, social media audit, SEO strategy, and brand positioning for an equine-assisted therapy client.</p>
+        <div class="result"><span class="mono">Result</span><span class="need">[NEED: client outcome]</span></div>
+        <div class="tags"><span class="tag">Positioning</span><span class="tag">SWOT</span><span class="tag">Social audit</span></div>
+      </article>
+      <article class="work-card reveal">
+        <div class="work-card-top"><span class="mono">SEO</span><span class="work-card-idx">/03</span></div>
+        <h3>Wellness Ranch — <span class="serif">on-page SEO</span></h3>
+        <p>Keyword research, keyword-to-page mapping, and on-page content optimization.</p>
+        <div class="result"><span class="mono">Result</span><span class="need">[NEED: # keywords, # pages, Search Console movement]</span></div>
+        <div class="tags"><span class="tag">Keyword mapping</span><span class="tag">On-page</span></div>
+      </article>
+      <article class="work-card reveal d1">
+        <div class="work-card-top"><span class="mono">Brand &amp; E-commerce</span><span class="work-card-idx">/04</span></div>
+        <h3>Jake Bailey Artist — <span class="serif">a DTC brand I run</span></h3>
+        <p>Shopify store with a three-tier product ladder — $85 prints, $150+ commissions, $950–$1,200 originals — and an inquiry-to-delivery commission funnel.</p>
+        <div class="result"><span class="mono">Result</span><span class="need">[NEED: orders, followers, or converting channel]</span></div>
+        <div class="tags"><span class="tag">Shopify</span><span class="tag">Pricing</span><span class="tag">Funnel</span></div>
+      </article>
+    </div>
+  </div>
+</section>
 
-## Selected work
+<section class="block" id="approach">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono reveal">02 — Approach</div>
+      <div><h2 class="reveal d1">Three pillars, <span class="serif grad-text">one pipeline.</span></h2></div>
+    </div>
+    <div class="pillars">
+      <div class="pillar reveal"><span class="mono">01</span><h3>Data &amp; CRM</h3><p>Salesforce pipeline and lead capture, leadership dashboards in Looker, GA4, Tableau, and R.</p><div class="bar"><i></i></div></div>
+      <div class="pillar reveal d1"><span class="mono">02</span><h3>Strategy &amp; SEO</h3><p>Marketing plans built from competitive research, SWOT, and keyword mapping.</p><div class="bar"><i></i></div></div>
+      <div class="pillar reveal d2"><span class="mono">03</span><h3>Content &amp; Creative</h3><p>Email, AI-assisted social content, and a DTC brand — creative shipped without a design queue.</p><div class="bar"><i></i></div></div>
+    </div>
+  </div>
+</section>
 
-::::: {.card-grid}
+<section class="block" id="credentials">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono reveal">03 — Credentials</div>
+      <div><h2 class="reveal d1">Verified, <span class="serif grad-text">not claimed.</span></h2></div>
+    </div>
+    <div class="creds">
+      <div class="cred reveal"><span class="cred-badge">● Certified</span><h3>Google Analytics 4 Certification</h3><p>Google · Issued Oct 2025</p></div>
+      <div class="cred reveal d1"><span class="cred-badge">● In progress</span><h3>MS, Digital Marketing</h3><p>Cal Poly Pomona · 3.94 GPA · Expected Summer 2027</p></div>
+      <div class="cred reveal d2"><span class="cred-badge">● Certified</span><h3 class="need">[NEED: Tableau certification]</h3><p>[NEED: issuer · date]</p></div>
+      <div class="cred reveal d3"><span class="cred-badge">● Degree</span><h3>BFA, Painting</h3><p>San Francisco Art Institute · 2019</p></div>
+    </div>
+  </div>
+</section>
 
-:::: {.proof-card}
-[NEED: category]{.card-label}
-
-### [NEED: project name]
-
-**Problem.** [NEED]
-
-**What I did.** [NEED]
-
-::: {.card-result}
-**Result.** [NEED]
-
-[NEED: tool]{.tag} [NEED: tool]{.tag}
-:::
-::::
-
-:::: {.proof-card}
-[NEED: category]{.card-label}
-
-### [NEED: project name]
-
-**Problem.** [NEED]
-
-**What I did.** [NEED]
-
-::: {.card-result}
-**Result.** [NEED]
-
-[NEED: tool]{.tag} [NEED: tool]{.tag}
-:::
-::::
-
-:::::
-
-## Certifications
-
-:::: {.cert-grid}
-
-::: {.cert-card}
-[Google]{.cert-issuer}
-**Google Analytics 4 Certification**
-[Issued Oct 2025]{.cert-date}
-:::
-
-::: {.cert-card}
-[NEED: issuer]{.cert-issuer}
-**[NEED: Tableau certification name]**
-[NEED: date]{.cert-date}
-:::
-
-::::
-
-## Contact
-
-::: {.contact-cta}
-[jakevns@gmail.com](mailto:jakevns@gmail.com)
-:::
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="mono reveal">04 — Contact</div>
+    <h2 class="reveal d1">Let's <span class="serif grad-text">talk.</span></h2>
+    <a class="mail reveal d2" href="mailto:jakevns@gmail.com">jakevns@gmail.com
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+    <div class="socials reveal d3">
+      <a href="https://www.linkedin.com/in/jakevns/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://github.com/jakevns" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</section>
+```

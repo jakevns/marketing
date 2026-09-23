@@ -28,17 +28,16 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-aa56fc22319e493e5def325253873584.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fa7e5ee93147dbbf66c701dab559de23.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-83536608f65a90be77208b7d22895aaa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -54,55 +53,37 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <meta name="robots" content="noindex, nofollow">
 
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Jake Evans</span>
-    </a>
-  </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="mailto:jakevns@gmail.com"> 
-<span class="menu-text">Contact</span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/jakevns/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/jakevns"> <i class="bi bi-github" role="img" aria-label="GitHub">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+<nav class="site-nav" id="site-nav" aria-label="Primary">
+  <div class="wrap">
+    <a href="#top" class="brand"><span class="brand-dot" aria-hidden="true"></span>Jake Evans</a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+    </div>
+  </div>
+</nav>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -225,6 +206,134 @@ ul.task-list li input[type="checkbox"] {
 </section>
 
 </main> <!-- /main -->
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="mono">© 2026 Jake Evans</span>
+    <span class="mono">Built with Quarto</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Nav: glass background once the page scrolls
+  var nav = document.getElementById('site-nav');
+  if (nav) {
+    var onScroll = function () { nav.classList.toggle('scrolled', window.scrollY > 20); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  // Count-up numbers (the final value is already in the HTML as a no-JS fallback)
+  function runCount(el) {
+    var end = parseFloat(el.dataset.count), dec = +(el.dataset.decimals || 0);
+    var pre = el.dataset.prefix || '', suf = el.dataset.suffix || '';
+    if (reduce) { el.textContent = pre + end.toFixed(dec) + suf; return; }
+    var t0 = performance.now(), dur = 1600;
+    (function tick(t) {
+      var p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+      el.textContent = pre + (end * e).toFixed(dec) + suf;
+      if (p < 1) requestAnimationFrame(tick);
+    })(t0);
+  }
+
+  // Scroll reveal
+  var els = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('in');
+        e.target.querySelectorAll('[data-count]').forEach(runCount);
+        io.unobserve(e.target);
+      });
+    }, { threshold: 0.15 });
+    els.forEach(function (el) { io.observe(el); });
+  } else {
+    els.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  // Card spotlight follows the cursor
+  document.querySelectorAll('.work-card').forEach(function (c) {
+    c.addEventListener('pointermove', function (e) {
+      var r = c.getBoundingClientRect();
+      c.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      c.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    });
+  });
+
+  // Signature: pipeline funnel — leads enter wide, some drop at each stage,
+  // closed deals flare at the end. Only runs on pages with <canvas id="funnel">.
+  var cv = document.getElementById('funnel');
+  if (!cv) return;
+  var ctx = cv.getContext('2d'), W, H, parts = [], flares = [];
+  var stages = [{ x: .08, l: 'LEAD' }, { x: .42, l: 'NURTURE' }, { x: .72, l: 'OPPORTUNITY' }, { x: .93, l: 'CLOSE' }];
+  function size() {
+    var dpr = Math.min(2, window.devicePixelRatio || 1), r = cv.getBoundingClientRect();
+    W = r.width; H = r.height; cv.width = W * dpr; cv.height = H * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  window.addEventListener('resize', size); size();
+  function halfW(p) { return H * (.40 * Math.pow(1 - p, 1.35) + .025); }
+  function spawn() {
+    parts.push({ p: 0, s: Math.random() * 2 - 1, sp: .0016 + Math.random() * .0018,
+      r: 1 + Math.random() * 1.6, drop: Math.random() < .55 ? .25 + Math.random() * .6 : 2,
+      a: 1, w: Math.random() * Math.PI * 2, fall: 0 });
+  }
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    var cy = H * .5, x0 = W * .04, x1 = W * .94, i, q;
+    ctx.lineWidth = 1; ctx.strokeStyle = 'rgba(255,255,255,.10)';
+    [1, -1].forEach(function (sg) {
+      ctx.beginPath();
+      for (var k = 0; k <= 60; k++) {
+        var p = k / 60, x = x0 + (x1 - x0) * p, y = cy + sg * halfW(p);
+        k ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+      }
+      ctx.stroke();
+    });
+    ctx.font = '500 10px "JetBrains Mono", monospace'; ctx.textAlign = 'center';
+    stages.forEach(function (st) {
+      var x = x0 + (x1 - x0) * st.x, h = halfW(st.x);
+      ctx.strokeStyle = 'rgba(255,255,255,.07)'; ctx.setLineDash([3, 4]);
+      ctx.beginPath(); ctx.moveTo(x, cy - h - 14); ctx.lineTo(x, cy + h + 14); ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.fillStyle = 'rgba(140,151,170,.8)';
+      ctx.fillText(st.l, x, Math.min(H - 6, cy + Math.max(h, 28) + 22));
+    });
+    for (i = parts.length - 1; i >= 0; i--) {
+      q = parts[i]; q.p += q.sp; q.w += .05;
+      if (q.p > q.drop) { q.a -= .03; q.fall += .6; }
+      var x = x0 + (x1 - x0) * q.p, y = cy + q.s * halfW(q.p) * .92 + Math.sin(q.w) * 2 + q.fall;
+      if (q.a <= 0) { parts.splice(i, 1); continue; }
+      if (q.p >= 1) { flares.push({ x: x, y: cy, r: 2, a: .9 }); parts.splice(i, 1); continue; }
+      var t = q.p;
+      ctx.fillStyle = 'rgba(' + Math.round(45 + 51 * t) + ',' + Math.round(212 - 47 * t) + ',' +
+        Math.round(191 + 59 * t) + ',' + ((.35 + .6 * t) * q.a) + ')';
+      ctx.beginPath(); ctx.arc(x, y, q.r * (1 + t * .6), 0, Math.PI * 2); ctx.fill();
+    }
+    var g = ctx.createRadialGradient(x1, cy, 0, x1, cy, 40);
+    g.addColorStop(0, 'rgba(45,212,191,.55)'); g.addColorStop(1, 'rgba(45,212,191,0)');
+    ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x1, cy, 40, 0, Math.PI * 2); ctx.fill();
+    for (i = flares.length - 1; i >= 0; i--) {
+      var f = flares[i]; f.r += 1.1; f.a -= .02;
+      if (f.a <= 0) { flares.splice(i, 1); continue; }
+      ctx.strokeStyle = 'rgba(94,234,212,' + f.a + ')'; ctx.lineWidth = 1.2;
+      ctx.beginPath(); ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2); ctx.stroke();
+    }
+  }
+  if (reduce) {
+    for (var k = 0; k < 260; k++) { spawn(); var z = parts[parts.length - 1]; z.p = Math.random() * Math.min(z.drop, .98); }
+    draw(); return;
+  }
+  var last = 0;
+  (function loop(t) {
+    if (t - last > 55) { spawn(); if (Math.random() < .5) spawn(); last = t; }
+    draw(); requestAnimationFrame(loop);
+  })(0);
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {
@@ -624,19 +733,6 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
-<p>Jake Evans · <a href="mailto:jakevns@gmail.com">jakevns@gmail.com</a></p>
-</div>
-    <div class="nav-footer-right">
-      &nbsp;
-    </div>
-  </div>
-</footer>
 
 
 
