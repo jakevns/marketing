@@ -51,7 +51,7 @@ page-layout: custom
     <div class="work">
       <article class="work-card reveal">
         <div class="work-card-top"><span class="mono">CRM &amp; Analytics</span><span class="work-card-idx">/01</span></div>
-        <h3>Casper — pipeline &amp; <span class="serif">leadership dashboards</span></h3>
+        <h3>Casper — <span class="serif">pipeline &amp; leadership dashboards</span></h3>
         <p>I own the store's largest Salesforce pipeline — about half of all open opportunities — and customize our KPI dashboards weekly around active promotions and slow-moving products. I added rep-level conversion reports that the district manager now uses to coach the team.</p>
         <div class="result"><span class="mono">Result</span><span>#1 in Q3 conversion (33% vs. 27.5% store average). Dashboard insights shaped a new adjustable base and protection plan strategy that increased sales of both.</span></div>
         <div class="tags"><span class="tag">Salesforce</span><span class="tag">Looker</span><span class="tag">KPI reporting</span></div>
@@ -70,12 +70,12 @@ page-layout: custom
         <div class="result"><span class="mono">Result</span><span>92-keyword map by intent, difficulty, and CPC. Found a 65 mobile vs. 92 desktop speed gap and 25 of 97 images missing alt text.</span></div>
         <div class="tags"><span class="tag">SEMrush</span><span class="tag">Screaming Frog</span><span class="tag">Keyword mapping</span></div>
       </article>
-      <article class="work-card reveal d1">
+           <article class="work-card reveal d1">
         <div class="work-card-top"><span class="mono">Brand &amp; E-commerce</span><span class="work-card-idx">/04</span></div>
         <h3>Jake Bailey Artist — <span class="serif">a DTC brand I run</span></h3>
-        <p>Shopify store with a three-tier product ladder — $85 prints, $150+ commissions, $950–$1,200 originals — and an inquiry-to-delivery commission funnel.</p>
-        <div class="result"><span class="mono">Result</span><span class="need">[NEED: orders, followers, or converting channel]</span></div>
-        <div class="tags"><span class="tag">Shopify</span><span class="tag">Pricing</span><span class="tag">Funnel</span></div>
+        <p>A direct-to-consumer art brand with a three-tier product ladder — $85 prints, $150+ commissions, $950–$1,200 originals — and an inquiry-to-delivery commission funnel. Now building a custom-coded storefront on a Shopify backend.</p>
+        <div class="result"><span class="mono">Result</span><span class="need">[NEED: Instagram follower count, or commissions/orders in the last 12 months]</span></div>
+        <div class="tags"><span class="tag">Shopify</span><span class="tag">HTML / CSS</span><span class="tag">Funnel</span></div>
       </article>
     </div>
   </div>
