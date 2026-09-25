@@ -31,7 +31,7 @@ page-layout: custom
     <div class="stat"><div class="stat-num" data-count="6" data-suffix=" yrs">6 yrs</div><div class="stat-label">Running Salesforce lead capture &amp; pipeline</div></div>
     <div class="stat"><div class="stat-num" data-count="33" data-suffix="%">33%</div><div class="stat-label">Q3 conversion rate — #1 on the team, 21% above store average</div></div>
     <div class="stat"><div class="stat-num" data-count="3.94" data-decimals="2">3.94</div><div class="stat-label">GPA — MS Digital Marketing, Cal Poly Pomona</div></div>
-    <div class="stat"><div class="stat-num" data-count="4">0</div><div class="stat-label">Google certifications — Analytics &amp; Ads</div></div>
+    <div class="stat"><div class="stat-num" data-count="7">0</div><div class="stat-label">Certifications — Google &amp; HubSpot Academy</div></div>
   </div>
 </div>
 
@@ -105,6 +105,7 @@ page-layout: custom
       <div class="cred reveal"><span class="cred-badge">● Certified</span><h3>Google Analytics Certification</h3><p>Google · Issued Sep 2026</p></div>
       <div class="cred reveal d1"><span class="cred-badge">● In progress</span><h3>MS, Digital Marketing</h3><p>Cal Poly Pomona · 3.94 GPA · Expected Summer 2027</p></div>
       <div class="cred reveal d2"><span class="cred-badge">● Certified</span><h3>Google Ads Certifications</h3><p>Search · Display · AI-Powered Shopping · Google · 2026</p></div>
+      <div class="cred reveal d3"><span class="cred-badge">● Certified</span><h3>HubSpot Academy Certifications</h3><p>Inbound Marketing · Inbound Marketing Optimization · Reporting · HubSpot · 2026</p></div>
       <div class="cred reveal d3"><span class="cred-badge">● Degree</span><h3>BFA, Painting</h3><p>San Francisco Art Institute · 2019</p></div>
     </div>
   </div>
