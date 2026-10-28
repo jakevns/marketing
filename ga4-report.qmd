@@ -1,0 +1,27 @@
+---
+title: "Website Traffic Analytics"
+description: "GA4 website-traffic analysis report — in progress."
+---
+
+[● In progress]{.cred-badge}
+
+This report is being built. Sections below will be filled in as the analysis is completed.
+
+## Executive Summary
+
+## Data & Sources
+
+- Google Analytics 4 (GA4)
+- Google Search Console
+- BigQuery
+- Looker Studio
+
+## Business Problem
+
+## Research Questions
+
+## Methods
+
+## Findings
+
+## Recommendations

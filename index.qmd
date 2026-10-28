@@ -45,8 +45,40 @@ page-layout: custom
 <section class="block" id="work">
   <div class="wrap">
     <div class="sec-head">
-      <div class="mono reveal">01 — Selected work</div>
+      <div class="mono reveal">01 — Digital marketing work</div>
       <div><h2 class="reveal d1">Work with a <span class="serif grad-text">result line.</span></h2></div>
+    </div>
+    <div class="work">
+      <article class="work-card reveal">
+        <div class="work-card-top"><span class="mono">Strategy</span><span class="work-card-idx">/01</span></div>
+        <h3>Wellness Ranch — <span class="serif">digital marketing plan</span></h3>
+        <p>Paid micro-internship: a full marketing plan for a nonprofit equine-assisted therapy provider, covering competitive analysis, SWOT, a social and review audit, positioning, and an email, social, and review action plan.</p>
+        <div class="result"><span class="mono">Result</span><span>5 competitors benchmarked, 6 channels audited, and a segmented email program with 9 ready-to-send emails, plus a weekly social calendar and a 30-day review drive.</span></div>
+        <div class="tags"><span class="tag">Positioning</span><span class="tag">SWOT</span><span class="tag">Social audit</span></div>
+      </article>
+      <article class="work-card reveal d1">
+        <div class="work-card-top"><span class="mono">SEO</span><span class="work-card-idx">/02</span></div>
+        <h3>Wellness Ranch — <span class="serif">on-page SEO</span></h3>
+        <p>Paid micro-internship: a 7-part on-page SEO audit of the client's Wix site, covering technical health, keyword mapping, content, internal linking, images, schema, and CTAs.</p>
+        <div class="result"><span class="mono">Result</span><span>92-keyword map by intent, difficulty, and CPC. Found a 65 mobile vs. 92 desktop speed gap and 25 of 97 images missing alt text.</span></div>
+        <div class="tags"><span class="tag">SEMrush</span><span class="tag">Screaming Frog</span><span class="tag">Keyword mapping</span></div>
+      </article>
+           <article class="work-card reveal">
+        <div class="work-card-top"><span class="mono">Brand &amp; E-commerce</span><span class="work-card-idx">/03</span></div>
+        <h3>Jake Bailey Artist — <span class="serif">a DTC brand I run</span></h3>
+        <p>A direct-to-consumer art brand with a three-tier product ladder — $85 prints, $150+ commissions, $950–$1,200 originals — and an inquiry-to-delivery commission funnel. Now building a custom-coded storefront on a Shopify backend.</p>
+                <div class="result"><span class="mono">Result</span><span>Built an Instagram audience of 4,000+ followers for the brand.</span></div>
+        <div class="tags"><span class="tag">Shopify</span><span class="tag">HTML / CSS</span><span class="tag">Funnel</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="analytics">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono reveal">02 — Marketing analytics</div>
+      <div><h2 class="reveal d1">Data that <span class="serif grad-text">drives decisions.</span></h2></div>
     </div>
     <div class="work">
       <article class="work-card reveal">
@@ -57,25 +89,22 @@ page-layout: custom
         <div class="tags"><span class="tag">Salesforce</span><span class="tag">Looker</span><span class="tag">KPI reporting</span></div>
       </article>
       <article class="work-card reveal d1">
-        <div class="work-card-top"><span class="mono">Strategy</span><span class="work-card-idx">/02</span></div>
-        <h3>Wellness Ranch — <span class="serif">digital marketing plan</span></h3>
-        <p>Paid micro-internship: a full marketing plan for a nonprofit equine-assisted therapy provider, covering competitive analysis, SWOT, a social and review audit, positioning, and an email, social, and review action plan.</p>
-        <div class="result"><span class="mono">Result</span><span>5 competitors benchmarked, 6 channels audited, and a segmented email program with 9 ready-to-send emails, plus a weekly social calendar and a 30-day review drive.</span></div>
-        <div class="tags"><span class="tag">Positioning</span><span class="tag">SWOT</span><span class="tag">Social audit</span></div>
+        <div class="work-card-top"><span class="mono">Web Analytics</span><span class="work-card-idx">/02</span></div>
+        <h3>Website traffic — <span class="serif">GA4 analytics report</span></h3>
+        <p>A website-traffic analysis combining GA4, Google Search Console, BigQuery, and Looker Studio: business problem, research questions, methods, findings, and recommendations.</p>
+        <div class="result"><span class="mono">Status</span><span>In progress.</span></div>
+        <div class="tags"><span class="tag">GA4</span><span class="tag">Search Console</span><span class="tag">BigQuery</span><span class="tag">Looker Studio</span></div>
+        <div class="btns"><a class="btn-pill btn-outline" href="ga4-report.html">View report
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></div>
       </article>
       <article class="work-card reveal">
-        <div class="work-card-top"><span class="mono">SEO</span><span class="work-card-idx">/03</span></div>
-        <h3>Wellness Ranch — <span class="serif">on-page SEO</span></h3>
-        <p>Paid micro-internship: a 7-part on-page SEO audit of the client's Wix site, covering technical health, keyword mapping, content, internal linking, images, schema, and CTAs.</p>
-        <div class="result"><span class="mono">Result</span><span>92-keyword map by intent, difficulty, and CPC. Found a 65 mobile vs. 92 desktop speed gap and 25 of 97 images missing alt text.</span></div>
-        <div class="tags"><span class="tag">SEMrush</span><span class="tag">Screaming Frog</span><span class="tag">Keyword mapping</span></div>
-      </article>
-           <article class="work-card reveal d1">
-        <div class="work-card-top"><span class="mono">Brand &amp; E-commerce</span><span class="work-card-idx">/04</span></div>
-        <h3>Jake Bailey Artist — <span class="serif">a DTC brand I run</span></h3>
-        <p>A direct-to-consumer art brand with a three-tier product ladder — $85 prints, $150+ commissions, $950–$1,200 originals — and an inquiry-to-delivery commission funnel. Now building a custom-coded storefront on a Shopify backend.</p>
-                <div class="result"><span class="mono">Result</span><span>Built an Instagram audience of 4,000+ followers for the brand.</span></div>
-        <div class="tags"><span class="tag">Shopify</span><span class="tag">HTML / CSS</span><span class="tag">Funnel</span></div>
+        <div class="work-card-top"><span class="mono">Presentation</span><span class="work-card-idx">/03</span></div>
+        <h3>Marketing analytics — <span class="serif">slide presentation</span></h3>
+        <p>A Reveal.js slide deck presenting the analytics findings and recommendations, built in Quarto.</p>
+        <div class="result"><span class="mono">Status</span><span>Coming soon.</span></div>
+        <div class="tags"><span class="tag">Reveal.js</span><span class="tag">Quarto</span></div>
+        <div class="btns"><a class="btn-pill btn-outline" href="presentation.html">Open slides
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></div>
       </article>
     </div>
   </div>
@@ -84,7 +113,7 @@ page-layout: custom
 <section class="block" id="approach">
   <div class="wrap">
     <div class="sec-head">
-      <div class="mono reveal">02 — Approach</div>
+      <div class="mono reveal">03 — Approach</div>
       <div><h2 class="reveal d1">Three pillars, <span class="serif grad-text">one pipeline.</span></h2></div>
     </div>
     <div class="pillars">
@@ -98,7 +127,7 @@ page-layout: custom
 <section class="block" id="credentials">
   <div class="wrap">
     <div class="sec-head">
-      <div class="mono reveal">03 — Credentials</div>
+      <div class="mono reveal">04 — Credentials</div>
       <div><h2 class="reveal d1">Verified, <span class="serif grad-text">not claimed.</span></h2></div>
     </div>
     <div class="creds">
@@ -113,7 +142,7 @@ page-layout: custom
 
 <section class="contact" id="contact">
   <div class="wrap">
-    <div class="mono reveal">04 — Contact</div>
+    <div class="mono reveal">05 — Contact</div>
     <h2 class="reveal d1">Let's <span class="serif grad-text">talk.</span></h2>
     <a class="mail reveal d2" href="mailto:jakevns@gmail.com">jakevns@gmail.com
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>

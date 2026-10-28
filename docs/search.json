@@ -1,5 +1,68 @@
 [
   {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "Jake Evans\n    \n      Work\n      Analytics\n      Approach\n      Credentials\n      Resume\n      Get in touch\n    \n  \n\n\n\n\n\n\n  Download resume\n    \n  Open in new tab\n\n\n\n  Your browser can't display the PDF inline. Download the resume instead."
+  },
+  {
+    "objectID": "ga4-report.html",
+    "href": "ga4-report.html",
+    "title": "Website Traffic Analytics",
+    "section": "",
+    "text": "● In progress\nThis report is being built. Sections below will be filled in as the analysis is completed."
+  },
+  {
+    "objectID": "ga4-report.html#executive-summary",
+    "href": "ga4-report.html#executive-summary",
+    "title": "Website Traffic Analytics",
+    "section": "Executive Summary",
+    "text": "Executive Summary"
+  },
+  {
+    "objectID": "ga4-report.html#data-sources",
+    "href": "ga4-report.html#data-sources",
+    "title": "Website Traffic Analytics",
+    "section": "Data & Sources",
+    "text": "Data & Sources\n\nGoogle Analytics 4 (GA4)\nGoogle Search Console\nBigQuery\nLooker Studio"
+  },
+  {
+    "objectID": "ga4-report.html#business-problem",
+    "href": "ga4-report.html#business-problem",
+    "title": "Website Traffic Analytics",
+    "section": "Business Problem",
+    "text": "Business Problem"
+  },
+  {
+    "objectID": "ga4-report.html#research-questions",
+    "href": "ga4-report.html#research-questions",
+    "title": "Website Traffic Analytics",
+    "section": "Research Questions",
+    "text": "Research Questions"
+  },
+  {
+    "objectID": "ga4-report.html#methods",
+    "href": "ga4-report.html#methods",
+    "title": "Website Traffic Analytics",
+    "section": "Methods",
+    "text": "Methods"
+  },
+  {
+    "objectID": "ga4-report.html#findings",
+    "href": "ga4-report.html#findings",
+    "title": "Website Traffic Analytics",
+    "section": "Findings",
+    "text": "Findings"
+  },
+  {
+    "objectID": "ga4-report.html#recommendations",
+    "href": "ga4-report.html#recommendations",
+    "title": "Website Traffic Analytics",
+    "section": "Recommendations",
+    "text": "Recommendations"
+  },
+  {
     "objectID": "hub.html",
     "href": "hub.html",
     "title": "Hub",
@@ -26,5 +89,12 @@
     "title": "Hub",
     "section": "Profiles & admin",
     "text": "Profiles & admin\n\nLinkedIn\nGitHub\nRepo\nPages settings"
+  },
+  {
+    "objectID": "presentation.html#coming-soon",
+    "href": "presentation.html#coming-soon",
+    "title": "Marketing Analytics Presentation",
+    "section": "Coming soon",
+    "text": "Coming soon\nThe full marketing analytics presentation is in progress.\n← Back to portfolio"
   }
 ]

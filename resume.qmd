@@ -1,0 +1,16 @@
+---
+title: "Resume"
+description: "Jake Evans — resume."
+---
+
+```{=html}
+<div class="btns">
+  <a class="btn-pill btn-solid" href="assets/resumes/JakeEvans-Resume-Master.pdf" download="JakeEvans-Resume-Master.pdf">Download resume
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 3v9M4 8l4 4 4-4"/></svg></a>
+  <a class="btn-pill btn-outline" href="assets/resumes/JakeEvans-Resume-Master.pdf" target="_blank" rel="noopener">Open in new tab</a>
+</div>
+
+<object class="resume-viewer" data="assets/resumes/JakeEvans-Resume-Master.pdf" type="application/pdf" aria-label="Jake Evans resume (PDF)">
+  <p>Your browser can't display the PDF inline. <a href="assets/resumes/JakeEvans-Resume-Master.pdf">Download the resume</a> instead.</p>
+</object>
+```

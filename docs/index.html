@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -34,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-aa56fc22319e493e5def325253873584.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-bdb3b3494d1ea22fd317b6529d20d0a8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-83536608f65a90be77208b7d22895aaa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-9c3cb30346b6054fe2fe55939da4d2db.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -53,9 +56,21 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true});
+</script>
 <script>document.documentElement.classList.add('js');</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
 
 
 </head>
@@ -72,12 +87,14 @@ ul.task-list li input[type="checkbox"] {
 <div class="bg-glow" aria-hidden="true"></div>
 <nav class="site-nav" id="site-nav" aria-label="Primary">
   <div class="wrap">
-    <a href="#top" class="brand"><span class="brand-dot" aria-hidden="true"></span>Jake Evans</a>
+    <a href="./#top" class="brand"><span class="brand-dot" aria-hidden="true"></span>Jake Evans</a>
     <div class="nav-links">
-      <a href="#work">Work</a>
-      <a href="#approach">Approach</a>
-      <a href="#credentials">Credentials</a>
-      <a href="#contact" class="nav-cta">Get in touch</a>
+      <a href="./#work">Work</a>
+      <a href="./#analytics">Analytics</a>
+      <a href="./#approach">Approach</a>
+      <a href="./#credentials">Credentials</a>
+      <a href="resume.html">Resume</a>
+      <a href="./#contact" class="nav-cta">Get in touch</a>
     </div>
   </div>
 </nav>
@@ -125,8 +142,40 @@ ul.task-list li input[type="checkbox"] {
 <section class="block" id="work">
   <div class="wrap">
     <div class="sec-head">
-      <div class="mono reveal">01 — Selected work</div>
+      <div class="mono reveal">01 — Digital marketing work</div>
       <div><h2 class="reveal d1">Work with a <span class="serif grad-text">result line.</span></h2></div>
+    </div>
+    <div class="work">
+      <article class="work-card reveal">
+        <div class="work-card-top"><span class="mono">Strategy</span><span class="work-card-idx">/01</span></div>
+        <h3>Wellness Ranch — <span class="serif">digital marketing plan</span></h3>
+        <p>Paid micro-internship: a full marketing plan for a nonprofit equine-assisted therapy provider, covering competitive analysis, SWOT, a social and review audit, positioning, and an email, social, and review action plan.</p>
+        <div class="result"><span class="mono">Result</span><span>5 competitors benchmarked, 6 channels audited, and a segmented email program with 9 ready-to-send emails, plus a weekly social calendar and a 30-day review drive.</span></div>
+        <div class="tags"><span class="tag">Positioning</span><span class="tag">SWOT</span><span class="tag">Social audit</span></div>
+      </article>
+      <article class="work-card reveal d1">
+        <div class="work-card-top"><span class="mono">SEO</span><span class="work-card-idx">/02</span></div>
+        <h3>Wellness Ranch — <span class="serif">on-page SEO</span></h3>
+        <p>Paid micro-internship: a 7-part on-page SEO audit of the client's Wix site, covering technical health, keyword mapping, content, internal linking, images, schema, and CTAs.</p>
+        <div class="result"><span class="mono">Result</span><span>92-keyword map by intent, difficulty, and CPC. Found a 65 mobile vs. 92 desktop speed gap and 25 of 97 images missing alt text.</span></div>
+        <div class="tags"><span class="tag">SEMrush</span><span class="tag">Screaming Frog</span><span class="tag">Keyword mapping</span></div>
+      </article>
+           <article class="work-card reveal">
+        <div class="work-card-top"><span class="mono">Brand &amp; E-commerce</span><span class="work-card-idx">/03</span></div>
+        <h3>Jake Bailey Artist — <span class="serif">a DTC brand I run</span></h3>
+        <p>A direct-to-consumer art brand with a three-tier product ladder — $85 prints, $150+ commissions, $950–$1,200 originals — and an inquiry-to-delivery commission funnel. Now building a custom-coded storefront on a Shopify backend.</p>
+                <div class="result"><span class="mono">Result</span><span>Built an Instagram audience of 4,000+ followers for the brand.</span></div>
+        <div class="tags"><span class="tag">Shopify</span><span class="tag">HTML / CSS</span><span class="tag">Funnel</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="analytics">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono reveal">02 — Marketing analytics</div>
+      <div><h2 class="reveal d1">Data that <span class="serif grad-text">drives decisions.</span></h2></div>
     </div>
     <div class="work">
       <article class="work-card reveal">
@@ -137,25 +186,22 @@ ul.task-list li input[type="checkbox"] {
         <div class="tags"><span class="tag">Salesforce</span><span class="tag">Looker</span><span class="tag">KPI reporting</span></div>
       </article>
       <article class="work-card reveal d1">
-        <div class="work-card-top"><span class="mono">Strategy</span><span class="work-card-idx">/02</span></div>
-        <h3>Wellness Ranch — <span class="serif">digital marketing plan</span></h3>
-        <p>Paid micro-internship: a full marketing plan for a nonprofit equine-assisted therapy provider, covering competitive analysis, SWOT, a social and review audit, positioning, and an email, social, and review action plan.</p>
-        <div class="result"><span class="mono">Result</span><span>5 competitors benchmarked, 6 channels audited, and a segmented email program with 9 ready-to-send emails, plus a weekly social calendar and a 30-day review drive.</span></div>
-        <div class="tags"><span class="tag">Positioning</span><span class="tag">SWOT</span><span class="tag">Social audit</span></div>
+        <div class="work-card-top"><span class="mono">Web Analytics</span><span class="work-card-idx">/02</span></div>
+        <h3>Website traffic — <span class="serif">GA4 analytics report</span></h3>
+        <p>A website-traffic analysis combining GA4, Google Search Console, BigQuery, and Looker Studio: business problem, research questions, methods, findings, and recommendations.</p>
+        <div class="result"><span class="mono">Status</span><span>In progress.</span></div>
+        <div class="tags"><span class="tag">GA4</span><span class="tag">Search Console</span><span class="tag">BigQuery</span><span class="tag">Looker Studio</span></div>
+        <div class="btns"><a class="btn-pill btn-outline" href="ga4-report.html">View report
+          <svg viewbox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a></div>
       </article>
       <article class="work-card reveal">
-        <div class="work-card-top"><span class="mono">SEO</span><span class="work-card-idx">/03</span></div>
-        <h3>Wellness Ranch — <span class="serif">on-page SEO</span></h3>
-        <p>Paid micro-internship: a 7-part on-page SEO audit of the client's Wix site, covering technical health, keyword mapping, content, internal linking, images, schema, and CTAs.</p>
-        <div class="result"><span class="mono">Result</span><span>92-keyword map by intent, difficulty, and CPC. Found a 65 mobile vs. 92 desktop speed gap and 25 of 97 images missing alt text.</span></div>
-        <div class="tags"><span class="tag">SEMrush</span><span class="tag">Screaming Frog</span><span class="tag">Keyword mapping</span></div>
-      </article>
-           <article class="work-card reveal d1">
-        <div class="work-card-top"><span class="mono">Brand &amp; E-commerce</span><span class="work-card-idx">/04</span></div>
-        <h3>Jake Bailey Artist — <span class="serif">a DTC brand I run</span></h3>
-        <p>A direct-to-consumer art brand with a three-tier product ladder — $85 prints, $150+ commissions, $950–$1,200 originals — and an inquiry-to-delivery commission funnel. Now building a custom-coded storefront on a Shopify backend.</p>
-                <div class="result"><span class="mono">Result</span><span>Built an Instagram audience of 4,000+ followers for the brand.</span></div>
-        <div class="tags"><span class="tag">Shopify</span><span class="tag">HTML / CSS</span><span class="tag">Funnel</span></div>
+        <div class="work-card-top"><span class="mono">Presentation</span><span class="work-card-idx">/03</span></div>
+        <h3>Marketing analytics — <span class="serif">slide presentation</span></h3>
+        <p>A Reveal.js slide deck presenting the analytics findings and recommendations, built in Quarto.</p>
+        <div class="result"><span class="mono">Status</span><span>Coming soon.</span></div>
+        <div class="tags"><span class="tag">Reveal.js</span><span class="tag">Quarto</span></div>
+        <div class="btns"><a class="btn-pill btn-outline" href="presentation.html">Open slides
+          <svg viewbox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a></div>
       </article>
     </div>
   </div>
@@ -164,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
 <section class="block" id="approach">
   <div class="wrap">
     <div class="sec-head">
-      <div class="mono reveal">02 — Approach</div>
+      <div class="mono reveal">03 — Approach</div>
       <div><h2 class="reveal d1">Three pillars, <span class="serif grad-text">one pipeline.</span></h2></div>
     </div>
     <div class="pillars">
@@ -178,7 +224,7 @@ ul.task-list li input[type="checkbox"] {
 <section class="block" id="credentials">
   <div class="wrap">
     <div class="sec-head">
-      <div class="mono reveal">03 — Credentials</div>
+      <div class="mono reveal">04 — Credentials</div>
       <div><h2 class="reveal d1">Verified, <span class="serif grad-text">not claimed.</span></h2></div>
     </div>
     <div class="creds">
@@ -193,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section class="contact" id="contact">
   <div class="wrap">
-    <div class="mono reveal">04 — Contact</div>
+    <div class="mono reveal">05 — Contact</div>
     <h2 class="reveal d1">Let's <span class="serif grad-text">talk.</span></h2>
     <a class="mail reveal d2" href="mailto:jakevns@gmail.com">jakevns@gmail.com
       <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg></a>
@@ -208,133 +254,261 @@ ul.task-list li input[type="checkbox"] {
 
 
 <footer class="site-footer">
+
   <div class="wrap">
+
     <span class="mono">© 2026 Jake Evans</span>
+
     <span class="mono">Built with Quarto</span>
+
   </div>
+
 </footer>
 
+
+
 <script>
+
 (function () {
+
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+
+
   // Nav: glass background once the page scrolls
+
   var nav = document.getElementById('site-nav');
+
   if (nav) {
+
     var onScroll = function () { nav.classList.toggle('scrolled', window.scrollY > 20); };
+
     window.addEventListener('scroll', onScroll, { passive: true });
+
     onScroll();
+
   }
+
+
 
   // Count-up numbers (the final value is already in the HTML as a no-JS fallback)
+
   function runCount(el) {
+
     var end = parseFloat(el.dataset.count), dec = +(el.dataset.decimals || 0);
+
     var pre = el.dataset.prefix || '', suf = el.dataset.suffix || '';
+
     if (reduce) { el.textContent = pre + end.toFixed(dec) + suf; return; }
+
     var t0 = performance.now(), dur = 1600;
+
     (function tick(t) {
+
       var p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+
       el.textContent = pre + (end * e).toFixed(dec) + suf;
+
       if (p < 1) requestAnimationFrame(tick);
+
     })(t0);
+
   }
+
+
 
   // Scroll reveal
+
   var els = document.querySelectorAll('.reveal');
+
   if ('IntersectionObserver' in window) {
+
     var io = new IntersectionObserver(function (entries) {
+
       entries.forEach(function (e) {
+
         if (!e.isIntersecting) return;
+
         e.target.classList.add('in');
+
         e.target.querySelectorAll('[data-count]').forEach(runCount);
+
         io.unobserve(e.target);
+
       });
+
     }, { threshold: 0.15 });
+
     els.forEach(function (el) { io.observe(el); });
+
   } else {
+
     els.forEach(function (el) { el.classList.add('in'); });
+
   }
+
+
 
   // Card spotlight follows the cursor
+
   document.querySelectorAll('.work-card').forEach(function (c) {
+
     c.addEventListener('pointermove', function (e) {
+
       var r = c.getBoundingClientRect();
+
       c.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+
       c.style.setProperty('--my', (e.clientY - r.top) + 'px');
+
     });
+
   });
 
+
+
   // Signature: pipeline funnel — leads enter wide, some drop at each stage,
+
   // closed deals flare at the end. Only runs on pages with <canvas id="funnel">.
+
   var cv = document.getElementById('funnel');
+
   if (!cv) return;
+
   var ctx = cv.getContext('2d'), W, H, parts = [], flares = [];
+
   var stages = [{ x: .08, l: 'LEAD' }, { x: .42, l: 'NURTURE' }, { x: .72, l: 'OPPORTUNITY' }, { x: .93, l: 'CLOSE' }];
+
   function size() {
+
     var dpr = Math.min(2, window.devicePixelRatio || 1), r = cv.getBoundingClientRect();
+
     W = r.width; H = r.height; cv.width = W * dpr; cv.height = H * dpr;
+
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
   }
+
   window.addEventListener('resize', size); size();
+
   function halfW(p) { return H * (.40 * Math.pow(1 - p, 1.35) + .025); }
+
   function spawn() {
+
     parts.push({ p: 0, s: Math.random() * 2 - 1, sp: .0016 + Math.random() * .0018,
+
       r: 1 + Math.random() * 1.6, drop: Math.random() < .55 ? .25 + Math.random() * .6 : 2,
+
       a: 1, w: Math.random() * Math.PI * 2, fall: 0 });
+
   }
+
   function draw() {
+
     ctx.clearRect(0, 0, W, H);
+
     var cy = H * .5, x0 = W * .04, x1 = W * .94, i, q;
+
     ctx.lineWidth = 1; ctx.strokeStyle = 'rgba(255,255,255,.10)';
+
     [1, -1].forEach(function (sg) {
+
       ctx.beginPath();
+
       for (var k = 0; k <= 60; k++) {
+
         var p = k / 60, x = x0 + (x1 - x0) * p, y = cy + sg * halfW(p);
+
         k ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+
       }
+
       ctx.stroke();
+
     });
+
     ctx.font = '500 10px "JetBrains Mono", monospace'; ctx.textAlign = 'center';
+
     stages.forEach(function (st) {
+
       var x = x0 + (x1 - x0) * st.x, h = halfW(st.x);
+
       ctx.strokeStyle = 'rgba(255,255,255,.07)'; ctx.setLineDash([3, 4]);
+
       ctx.beginPath(); ctx.moveTo(x, cy - h - 14); ctx.lineTo(x, cy + h + 14); ctx.stroke();
+
       ctx.setLineDash([]);
+
       ctx.fillStyle = 'rgba(140,151,170,.8)';
+
       ctx.fillText(st.l, x, Math.min(H - 6, cy + Math.max(h, 28) + 22));
+
     });
+
     for (i = parts.length - 1; i >= 0; i--) {
+
       q = parts[i]; q.p += q.sp; q.w += .05;
+
       if (q.p > q.drop) { q.a -= .03; q.fall += .6; }
+
       var x = x0 + (x1 - x0) * q.p, y = cy + q.s * halfW(q.p) * .92 + Math.sin(q.w) * 2 + q.fall;
+
       if (q.a <= 0) { parts.splice(i, 1); continue; }
+
       if (q.p >= 1) { flares.push({ x: x, y: cy, r: 2, a: .9 }); parts.splice(i, 1); continue; }
+
       var t = q.p;
+
       ctx.fillStyle = 'rgba(' + Math.round(45 + 51 * t) + ',' + Math.round(212 - 47 * t) + ',' +
+
         Math.round(191 + 59 * t) + ',' + ((.35 + .6 * t) * q.a) + ')';
+
       ctx.beginPath(); ctx.arc(x, y, q.r * (1 + t * .6), 0, Math.PI * 2); ctx.fill();
+
     }
+
     var g = ctx.createRadialGradient(x1, cy, 0, x1, cy, 40);
+
     g.addColorStop(0, 'rgba(45,212,191,.55)'); g.addColorStop(1, 'rgba(45,212,191,0)');
+
     ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x1, cy, 40, 0, Math.PI * 2); ctx.fill();
+
     for (i = flares.length - 1; i >= 0; i--) {
+
       var f = flares[i]; f.r += 1.1; f.a -= .02;
+
       if (f.a <= 0) { flares.splice(i, 1); continue; }
+
       ctx.strokeStyle = 'rgba(94,234,212,' + f.a + ')'; ctx.lineWidth = 1.2;
+
       ctx.beginPath(); ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2); ctx.stroke();
+
     }
+
   }
+
   if (reduce) {
+
     for (var k = 0; k < 260; k++) { spawn(); var z = parts[parts.length - 1]; z.p = Math.random() * Math.min(z.drop, .98); }
+
     draw(); return;
+
   }
+
   var last = 0;
+
   (function loop(t) {
+
     if (t - last > 55) { spawn(); if (Math.random() < .5) spawn(); last = t; }
+
     draw(); requestAnimationFrame(loop);
+
   })(0);
+
 })();
+
 </script>
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

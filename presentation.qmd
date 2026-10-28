@@ -1,0 +1,13 @@
+---
+title: "Marketing Analytics Presentation"
+author: "Jake Evans"
+format:
+  revealjs:
+    theme: dark
+---
+
+## Coming soon
+
+The full marketing analytics presentation is in progress.
+
+[← Back to portfolio](./#analytics)
