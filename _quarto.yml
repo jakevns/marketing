@@ -13,10 +13,7 @@ website:
   description: "Digital marketer — CRM, analytics, SEO, and content."
   # favicon: assets/favicon.png   # uncomment once the file exists
   search: false           # a search box would let recruiters find other role pages
-  google-analytics: "G-XXXXXXXXXX"   # TODO: replace with real GA4 Measurement ID
-  # No Quarto navbar or page-footer: the site shell (nav + footer) lives in
-  # _partials/ so every page, including role pages, shares one design.
-
+  google-analytics: "G-YN67TFXLPY"
 format:
   html:
     theme:
